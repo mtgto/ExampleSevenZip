@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9D123D2A963DC900C53658 /* SevenZip in Frameworks */ = {isa = PBXBuildFile; productRef = CE9D123C2A963DC900C53658 /* SevenZip */; };
+		CE9D123F2A963DD500C53658 /* sample.7z in Resources */ = {isa = PBXBuildFile; fileRef = CE9D123E2A963DD500C53658 /* sample.7z */; };
 		CEDA181E2A94FF79007EE5EA /* ExampleSevenZipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA181D2A94FF79007EE5EA /* ExampleSevenZipApp.swift */; };
 		CEDA18202A94FF79007EE5EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA181F2A94FF79007EE5EA /* ContentView.swift */; };
 		CEDA18222A94FF7A007EE5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDA18212A94FF7A007EE5EA /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9D123E2A963DD500C53658 /* sample.7z */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.7z; sourceTree = "<group>"; };
 		CEDA181A2A94FF79007EE5EA /* ExampleSevenZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleSevenZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDA181D2A94FF79007EE5EA /* ExampleSevenZipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSevenZipApp.swift; sourceTree = "<group>"; };
 		CEDA181F2A94FF79007EE5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9D123D2A963DC900C53658 /* SevenZip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 		CEDA181C2A94FF79007EE5EA /* ExampleSevenZip */ = {
 			isa = PBXGroup;
 			children = (
+				CE9D123E2A963DD500C53658 /* sample.7z */,
 				CEDA181D2A94FF79007EE5EA /* ExampleSevenZipApp.swift */,
 				CEDA181F2A94FF79007EE5EA /* ContentView.swift */,
 				CEDA18212A94FF7A007EE5EA /* Assets.xcassets */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = ExampleSevenZip;
+			packageProductDependencies = (
+				CE9D123C2A963DC900C53658 /* SevenZip */,
+			);
 			productName = ExampleSevenZip;
 			productReference = CEDA181A2A94FF79007EE5EA /* ExampleSevenZip.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = CEDA18112A94FF79007EE5EA;
+			packageReferences = (
+				CE9D123B2A963DC900C53658 /* XCRemoteSwiftPackageReference "SevenZip" */,
+			);
 			productRefGroup = CEDA181B2A94FF79007EE5EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				CEDA18252A94FF7A007EE5EA /* Preview Assets.xcassets in Resources */,
 				CEDA18222A94FF7A007EE5EA /* Assets.xcassets in Resources */,
+				CE9D123F2A963DD500C53658 /* sample.7z in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +279,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExampleSevenZip/Preview Content\"";
+				DEVELOPMENT_TEAM = W3A6B7FDC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ExampleSevenZip/Preview Content\"";
+				DEVELOPMENT_TEAM = W3A6B7FDC7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE9D123B2A963DC900C53658 /* XCRemoteSwiftPackageReference "SevenZip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mtgto/SevenZip.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE9D123C2A963DC900C53658 /* SevenZip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE9D123B2A963DC900C53658 /* XCRemoteSwiftPackageReference "SevenZip" */;
+			productName = SevenZip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEDA18122A94FF79007EE5EA /* Project object */;
 }
